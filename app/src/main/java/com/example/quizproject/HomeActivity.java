@@ -48,6 +48,10 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
             return true;
+        } else if (item.getItemId() == R.id.action_history) {
+            Intent intent = new Intent(this, QuizHistoryActivity.class);
+            startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
